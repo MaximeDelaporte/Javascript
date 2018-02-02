@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+div[data-use="list"]
+{
+  background-color: brown;
+  width: 20vw;
+  min-height: 100vh;
+  box-shadow: 0 3px 3px black;
+  z-index: 2;
+}
+div[data-use="list"] ul
+{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+div[data-use="list"] ul li div
+{
+  padding: 5px;
+}
+div[data-use="list"] ul li:hover
+{
+  color: brown;
+  background-color:cornflowerblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+div[data-use="list"] ul li div:hover
+{
+  box-shadow: 1px 1px 2px 4px rgba(0,0,0, 0.2) inset;
+}
+div[data-use="detail"]
+{
+  background-color: cornflowerblue;
+  width: 80vw;
+  min-height: 100vh;
+}

@@ -1,0 +1,80 @@
+/*font-family: 'Cairo', sans-serif;
+font-family: 'Indie Flower', cursive;
+*/
+body
+{
+  font-family: 'Cairo', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/img/background.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section[data-use="menu"]
+{
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 50px;
+  height: 10%;
+  width: 100%;
+}
+
+.score
+{
+  padding: -bottom: 5px;
+
+  height: 1.5rem;
+}
+.lives-display
+{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+div.lives-display
+{
+  display: flex;
+  align-items: baseline;
+}
+section[data-use="gameboard"]
+{
+  margin: 0;
+  max-width: 80%;
+  min-width: 200px;
+  left: 10vw;
+  top: 10vh;
+  min-height: 200px;
+  max-height: 80%;
+  padding: 50px;
+
+}
+div[data-vertical]
+{
+  display: flex;
+}
+.imgDiv, .imgDivBonus
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgDiv img
+{
+    max-width: 70%;
+    height: auto;
+}
+.imgDivBonus img
+{
+  max-width: 50%;
+  height: auto;
+}
